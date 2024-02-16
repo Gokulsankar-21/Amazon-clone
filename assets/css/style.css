@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+*::selection {
+    background: #ffbd44;
+}
+
+body {
+    background: #dadada;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #131921;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+
+.nav-logo {
+    margin-left: 15px;
+    padding: 5px 5px 0 5px;
+}
+
+.nav-country {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 2px 5px;
+
+}
+
+.nav-country p {
+    font-size: 12px;
+    color: #c4c4c4;
+}
+
+.nav-country h1 {
+    color: #ffff;
+    font-size: 14px;
+}
+
+.nav-search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin-left: 15px;
+    background: #fff;
+    color: gray;
+    border-radius: 4px;
+}
+
+.nav-search-category {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px 0 0 5px;
+    padding: 10px 20px;
+    background-color: #e5e5e5;
+    cursor: pointer;
+
+}
+
+.nav-search-category:hover {
+    background-color: #dcdcdc;
+
+}
+
+.nav-search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-left: 20px;
+
+}
+
+.nav-search-icon {
+    background: #ffd64f;
+    border-radius: 0 5px 5px 0;
+    max-width: 41px;
+    padding: 8px;
+    cursor: pointer;
+    color: black;
+}
+
+.nav-search-icon:hover {
+    background: #ffbd44;
+}
+
+.nav-language {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-left: 15px;
+    font-weight: 600;
+    padding: 2px 5px;
+
+}
+
+.nav-text {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px 5px;
+
+}
+
+.nav-text p {
+    font-size: 10px;
+}
+
+.nav-text h1 {
+    font-size: 14px;
+}
+
+.nav-cart {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    padding: 2px 5px;
+
+}
+
+nav :is(.nav-country,
+    .nav-logo,
+    .nav-cart,
+    .nav-language,
+    .nav-text) {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    height: 80%;
+
+}
+
+nav :is(.nav-country,
+    .nav-logo,
+    .nav-cart,
+    .nav-language,
+    .nav-text):hover {
+    border: 1px solid #fff;
+
+}
+
+
+/* Nav-Bottom */
+.nav-bottom {
+    background: #232f3e;
+    color: #fff;
+    padding: 0px 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-bottom #menu_icon {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 5px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 6px 10px;
+}
+
+.nav-bottom div p {
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 6px 10px;
+}
+
+.nav-bottom :is(p, #menu_icon):hover {
+    border: 1px ridge #fff;
+
+}
+
+/* Header slider */
+.header-slider {
+    width: 100%;
+}
+
+.header-slider ul {
+    display: flex;
+    overflow-y: hidden;
+    mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+}
+
+.header-img {
+    max-width: 100%;
+    height: 100vh;
+}
+
+.header-slider a {
+    text-decoration: none;
+    color: #0000007b;
+    background-color: #ffffff4f;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5vh 1vw;
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.header-slider a:is(.next_btn, .prev_btn):hover {
+    background-color: #ffffff8b;
+
+}
+
+.next_btn {
+    right: 0;
+}
+
+.box-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin: 20px 30px;
+}
+
+.box-col {
+    display: flex;
+    flex-direction: column;
+    max-width: 24%;
+    min-height: 200px;
+    padding: 15px 20px;
+    background-color: #fff;
+    gap: 10px;
+    z-index: 10;
+}
+
+.box-col a {
+    color: #009999;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.box-col a:hover {
+    color: #be0b3b;
+    text-decoration: underline;
+}
+
+.header-box {
+    margin-top: -25vw;
+}
+
+.products-slider {
+    margin: 0px 30px;
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.products-slider .products {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.products-slider .products::-webkit-scrollbar {
+    display: none;
+    /* visibility: hidden; */
+}
+
+.products-slider .products img {
+    max-width: 200px;
+    object-fit: contain;
+}
+
+/* product-slider-with-price */
+
+.product-slider-with-price {
+    margin: 0 30px;
+    margin-bottom: 15px;
+    background: #fff;
+    padding: 20px;
+
+}
+
+.product-slider-with-price .products {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+.product-slider-with-price .products::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    min-width: 210px;
+    background: #fbfbfb;
+}
+
+.product-card img {
+    width: 110px;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-offer p {
+    font-size: 13px;
+    padding: 2px 5px;
+    background: #be0b3b;
+    color: #fff;
+    display: inline-block;
+    margin: 8px 0;
+    border-radius: 2px;
+}
+
+.product-offer span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #be0b3b;
+
+}
+
+.product-price {
+    color: grey;
+    font-size: 12px;
+}
+
+.product-card h4 {
+    color: #525252;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer {
+    background: #131921;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+
+/*  Now i completed the home page of out e-commerce amazon clone website */
+/* live server - route la default - index vechi irukum
+    port - 5500
+    router - index.html
+    home page - vera irukum, 
+
+*/
